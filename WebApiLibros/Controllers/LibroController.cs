@@ -38,7 +38,7 @@ namespace WebApiLibros.Controllers
         }
 
         //GET Traer todos los libros por Autor ID
-        [HttpGet("autor/{id}")]
+        [HttpGet("libros_autor/{id}")]
         public ActionResult<List<Libro>> GetByAutor(int id)
         {
             var libros = (from l in context.Libros
